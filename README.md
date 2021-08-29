@@ -1,2 +1,2 @@
-# curso-practico-de-js
-Repositorio del curso practico de JS por PLATZI
+# Curso practico de JavaScript 
+En este repositorio estara el codigo del curso practico de JS por PLATZI
