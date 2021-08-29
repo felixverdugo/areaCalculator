@@ -3,7 +3,8 @@
   * Variables *
 ==================
 */
-// alert("Los Resultados de los ejercicios estan en consola")
+
+alert("Los Resultados de los ejercicios estan en consola")
 
 let nombre = "Felix";
 let apellido = "Verdugo";
@@ -160,18 +161,18 @@ while (a >= 2) {
 
 // 3. Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
-// let pregunta = parseInt(prompt("Cuanto es 2 + 2"))
-// console.log(pregunta);
+let pregunta = parseInt(prompt("Cuanto es 2 + 2"))
+console.log(pregunta);
 
-// while (pregunta != "" || pregunta != " " || pregunta == undefined) {
-//   if (pregunta == 4) {
-//     alert("Felicidades respondiste bien")
-//     break;
-//   } else {
-//     alert("Lo siento respondiste mal")
-//     pregunta = parseInt(prompt("Cuanto es 2 + 2"))
-//   }
-// }
+while (pregunta != "" || pregunta != " " || pregunta == undefined) {
+  if (pregunta == 4) {
+    alert("Felicidades respondiste bien")
+    break;
+  } else {
+    alert("Lo siento respondiste mal")
+    pregunta = parseInt(prompt("Cuanto es 2 + 2"))
+  }
+}
 
 /*
 ===========================
