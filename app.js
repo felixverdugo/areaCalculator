@@ -3,6 +3,7 @@
   * Variables *
 ==================
 */
+// alert("Los Resultados de los ejercicios estan en consola")
 
 let nombre = "Felix";
 let apellido = "Verdugo";
@@ -61,7 +62,7 @@ saludar("Juan", "Castro Gallego", "juandc");
 =====================
 */
 // Switch
-let tipoDeSuscripcion = ["Basic", "Expert", "Free", "Expert Plus"];
+let tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
   case "Free":
@@ -123,11 +124,12 @@ const Suscripcion = [
 
 const tiposDeSuscripcion = Suscripcion.forEach((tiposuscrip) => {
   if (tiposuscrip.plan == tipoDeSuscripcion) {
-    console.log(tiposuscrip.mensaje);
+    console.log(tiposuscrip.ventajas);
     return 0;
   }
 });
-console.table(tipoDeSuscripcion);
+console.log(tipoDeSuscripcion);
+
 /*
 ==================
   * Ciclos *
@@ -136,22 +138,69 @@ console.table(tipoDeSuscripcion);
 
 // Bucle For
 
-// for (let i = 0; i < 5; i++) {
-//   console.log("El valor de i es: " + i);
-// }
-// for (let i = 10; i >= 2; i--) {
-//   console.log("El valor de i es: " + i);
-// }
+for (let i = 0; i < 5; i++) {
+  console.log("El valor de i es: " + i);
+}
+for (let i = 10; i >= 2; i--) {
+  console.log("El valor de i es: " + i);
+}
 
 // Bucle While
 
-// let i=0;
-// while (i < 5) {
-//   console.log("El valor de i es: " + i);
-//   i++;
+let i = 0;
+while (i < 5) {
+  console.log("El valor de i es: " + i);
+  i++;
+}
+let a = 10;
+while (a >= 2) {
+  console.log("El valor de a es: " + a);
+  a--;
+}
+
+// 3. Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+// let pregunta = parseInt(prompt("Cuanto es 2 + 2"))
+// console.log(pregunta);
+
+// while (pregunta != "" || pregunta != " " || pregunta == undefined) {
+//   if (pregunta == 4) {
+//     alert("Felicidades respondiste bien")
+//     break;
+//   } else {
+//     alert("Lo siento respondiste mal")
+//     pregunta = parseInt(prompt("Cuanto es 2 + 2"))
+//   }
 // }
-// let a = 10
-// while (a >= 2){
-//   console.log("El valor de a es: " + a);
-//   a--;
-// }
+
+/*
+===========================
+  * Listas En Javascript *
+===========================
+*/
+
+// Arrays
+const firstElemntPrinter = (array) => {
+  console.log(array[0]);
+};
+firstElemntPrinter([3, 1, 2]);
+
+const ElementPrinter = (array) => {
+  for (const i of array) {
+    console.log(i);
+  }
+};
+ElementPrinter([3, 1, 2]);
+
+// Objetos
+const objPrintter = (obj) => {
+  for (const i in obj) {
+    console.log(i);
+  }
+};
+
+objPrintter({
+  elemento: "Contenido Guapento 1",
+  elemento2: "Contenido Guapento 2",
+  element3: "Contenido Guapento 3",
+});
