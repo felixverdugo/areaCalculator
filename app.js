@@ -1,25 +1,7 @@
-const inputFigura = document.getElementById("inputFigura");
+const selectFigure = document.getElementById("selectFigure");
 const inputLado = document.getElementById("inputLado");
 const buttonA = document.getElementById("buttonA");
 const buttonP = document.getElementById("buttonP");
-
-buttonA.addEventListener("click", (e) => {
-  //   if (inputFigura.value == "cuadrado" || inputFigura.value == "Cuadrado") {
-  //     areaCuadrado(inputLado.value);
-  //   }else if (inputFigura.value == "circulo"){
-  //     areaCirculo(inputLado.value)
-  //   }else if(){
-  //   }
-});
-
-// const areaCuadrado = (ladoMedida) => {
-//   let result = ladoMedida * ladoMedida;
-//   return console.log(result)
-// };
-// const areaCirculo = (r) => {
-//   let result = Math.PI * (Math.pow(r, 2));
-//   return console.log(result)
-// };
 
 // const figuras = [
 //   {
@@ -39,3 +21,17 @@ buttonA.addEventListener("click", (e) => {
 //     operacion: b * a,
 //   },
 // ];
+
+buttonA.addEventListener("click", (e) => {
+  
+});
+
+// const areaCuadrado = (ladoMedida) => {
+//   let result = ladoMedida * ladoMedida;
+//   return console.log(result)
+// };
+// const areaCirculo = (r) => {
+//   let result = Math.PI * (Math.pow(r, 2));
+//   return console.log(result)
+// };
+
