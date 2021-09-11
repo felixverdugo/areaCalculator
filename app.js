@@ -8,41 +8,36 @@ console.groupCollapsed(
   "%cCuadrado",
   "color:#b8fffe; font-family:Arial; padding:10px; font-size:14px;"
 );
-const cuadrado_l = 1;
+const areaCuadrado = (l) => l * l;
+const perimetroCuadrado = (l) => l * 4;
 console.log(
-  `%cEl area del cuadrado es de ${cuadrado_l * cuadrado_l}`,
+  `%cEl area del cuadrado es de ${areaCuadrado(3)}`,
   "color: hotpink; padding:7px; font-family:Arial; font-size:12px;"
 );
 console.log(
-  `%cEl Perimetro de tu cuadrado  es de ${cuadrado_l * 4}`,
-  "color: hotpink; padding:7px; font-family:Arial; font-size:12px;"
+  `%cEl Perimetro de tu cuadrado  es de ${perimetroCuadrado(3)}`,
+  "color: #c6bdff; padding:7px; font-family:Arial; font-size:12px;"
 );
-console.log(
-  `%cLado de tu cuadrado es de ${cuadrado_l}`,
-  "color: purple; font-family: Arial; padding:5px;"
-);
+
 console.groupEnd();
 
 // Formula Triangulo
 
-const triangulo_b = 20;
-const triangulo_a = 10;
+const areaTriangulo = (triangulo_a, triangulo_b) =>
+  (triangulo_b * triangulo_a) / 2;
 
+const perimetroTriangulo = (l) => l * 3;
 console.groupCollapsed(
   "%cTriangulo",
   "color:#ffe06e; font-family:Arial; padding:10px; font-size:14px;"
 );
 console.log(
-  `%cEl área de tu triangulo es de ${(triangulo_a * triangulo_b) / 2}`,
+  `%cEl área de tu triangulo es de ${areaTriangulo(12, 3)}`,
   "color: hotpink; font-family:Arial; padding:7px; font-size:12px;"
 );
 console.log(
-  `%cLa base de tu triangulo es de ${triangulo_b}`,
-  "font-family: Arial; color: pink; padding:5px;"
-);
-console.log(
-  `%cLa altura de tu triangulo es de ${triangulo_a}`,
-  "font-family: Arial; color: pink; padding:5px;"
+  `%cEl área de tu triangulo es de ${areaTriangulo(12, 3)}`,
+  "color: #c6bdff; font-family:Arial; padding:7px; font-size:12px;"
 );
 
 console.groupEnd();
@@ -50,21 +45,21 @@ console.groupEnd();
 // Formula Rectangulo
 const rectangulo_b = 10;
 const rectangulo_a = 5;
-
+const areaRectangulo = (b, a) => b * a;
+const perimetroRectangulo = (l1, l2) => {
+  return (l1 + l1) + (l2 + l2);
+};
 console.groupCollapsed(
   "%cRectangulo",
   "color:#3b65ff; font-family:Arial; padding:10px; font-size:14px;"
 );
 console.log(
-  `%cEl área de tu rectangulo es de ${rectangulo_b * rectangulo_a}`,
+  `%cEl área de tu rectangulo es de ${areaRectangulo(20,10)}`,
   "color: hotpink; padding:7px; font-family:Arial; font-size:12px;"
 );
 console.log(
-  `%cLa base de tu rectangulo es de ${rectangulo_b}`,
-  "font-family: Arial; color: orange; padding:5px;"
+  `%cEl perimetro de tu rectangulo es de ${perimetroRectangulo(20,10)}`,
+  "color: #c6bdff; padding:7px; font-family:Arial; font-size:12px;"
 );
-console.log(
-  `%cLa altura de tu rectangulo es de ${rectangulo_a}`,
-  "font-family: Arial; color: orange; padding:5px;"
-);
+
 console.groupEnd();
