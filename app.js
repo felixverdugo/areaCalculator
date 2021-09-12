@@ -43,23 +43,45 @@ console.log(
 console.groupEnd();
 
 // Formula Rectangulo
-const rectangulo_b = 10;
-const rectangulo_a = 5;
 const areaRectangulo = (b, a) => b * a;
 const perimetroRectangulo = (l1, l2) => {
-  return (l1 + l1) + (l2 + l2);
+  return l1 + l1 + (l2 + l2);
 };
 console.groupCollapsed(
   "%cRectangulo",
   "color:#3b65ff; font-family:Arial; padding:10px; font-size:14px;"
 );
 console.log(
-  `%cEl área de tu rectangulo es de ${areaRectangulo(20,10)}`,
+  `%cEl área de tu rectangulo es de ${areaRectangulo(20, 10)}`,
   "color: hotpink; padding:7px; font-family:Arial; font-size:12px;"
 );
 console.log(
-  `%cEl perimetro de tu rectangulo es de ${perimetroRectangulo(20,10)}`,
+  `%cEl perimetro de tu rectangulo es de ${perimetroRectangulo(20, 10)}`,
   "color: #c6bdff; padding:7px; font-family:Arial; font-size:12px;"
 );
+console.groupEnd();
 
+// Formula Círculo
+
+const areaCirculo = (r) => {
+
+  let result = Math.PI * Math.pow(r, 2);
+  return result.toFixed(2)
+};
+const perimetroCirculo = (d) => {
+  return Math.PI * d;
+};
+
+console.groupCollapsed(
+  "%cCirculo",
+  "color:#3b65ff; font-family:Arial; padding:10px; font-size:14px;"
+);
+console.log(
+  `%cEl área de tu circulo es de ${areaCirculo(20)}`,
+  "color: hotpink; padding:7px; font-family:Arial; font-size:12px;"
+);
+console.log(
+  `%cEl perimetro de tu rectangulo es de ${perimetroRectangulo(20, 10)}`,
+  "color: #c6bdff; padding:7px; font-family:Arial; font-size:12px;"
+);
 console.groupEnd();
