@@ -76,8 +76,8 @@ buttonA.addEventListener("click", () => {
       "color: hotpink; font-family:Arial; padding:7px; font-size:12px;"
     );
   } else if (figura == "rectangulo") {
-    let b = prompt("Cual es la base de rectangulo")
-    let a = prompt("Cual es la altura de rectangulo") 
+    let b = prompt("Cual es la base de rectangulo");
+    let a = prompt("Cual es la altura de rectangulo");
     console.groupCollapsed(
       "%cRectangulo",
       "color:#3b65ff; font-family:Arial; padding:10px; font-size:14px;"
@@ -110,7 +110,7 @@ buttonP.addEventListener("click", () => {
     );
     console.groupEnd();
   } else if (figura == "triangulo") {
-    let l = prompt("Cual es el lado de tu triangulo")
+    let l = prompt("Cual es el lado de tu triangulo");
     console.groupCollapsed(
       "%cTriangulo",
       "color:#b8fffe; font-family:Arial; padding:10px; font-size:14px;"
@@ -120,8 +120,8 @@ buttonP.addEventListener("click", () => {
       "color: #c6bdff; padding:7px; font-family:Arial; font-size:12px;"
     );
   } else if (figura == "rectangulo") {
-    let l1 = prompt("Cual es lado 1 de tu rectangulo")
-    let l2 = prompt("Cual es lado 2 de tu rectangulo")
+    let l1 = prompt("Cual es lado 1 de tu rectangulo");
+    let l2 = prompt("Cual es lado 2 de tu rectangulo");
     console.groupCollapsed(
       "%cRectangulo",
       "color:#3b65ff; font-family:Arial; padding:10px; font-size:14px;"
